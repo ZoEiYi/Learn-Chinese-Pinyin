@@ -1,0 +1,144 @@
+/* 背景和主容器样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 主按钮容器样式 */
+#main {
+    width: 550px;
+    padding: 20px;
+    background-color: #55718e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main p {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+/* 标题样式 */
+p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 按钮样式 */
+.audio-btn {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 按钮悬停效果 */
+.audio-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* 按钮点击效果 */
+.audio-btn:active {
+    background-color: #1f618d;
+    transform: scale(0.98);
+}
+
+/* 错误时的按钮样式优先级 */
+.incorrect {
+    background-color: #e74c3c !important; /* 红色背景，优先级高 */
+}
+
+/* 统计信息样式 */
+#stats {
+    width: 550px;
+    padding: 20px;
+    background-color: #55718e; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* 统计信息标题 */
+#stats h3 {
+    color: #ecf0f1;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* 统计信息内容 */
+#stats-content {
+    color: #ecf0f1;
+    font-size: 24px;
+}
+
+/* 统计信息中的每一项 */
+#stats-content p {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2c3e50; /* 始终保持一致的颜色 */
+}
+
+/* 统计信息的正确和错误次数项 */
+.stats-item {
+    background-color: #2c3e50; /* 一致的背景颜色 */
+}
+
+/* 正确和错误的按钮颜色 */
+.correct {
+    background-color: #27ae60; /* 绿色背景 */
+}
+
+.incorrect {
+    background-color: #e74c3c; /* 红色背景 */
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    #main, #stats {
+        width: 90%;
+    }
+    
+    .audio-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* 其他样式保持不变 */
+
+/* 统计信息的样式 */
+
+
+/* 统计信息项的样式 */
+.stats-item {
+    margin: 10px 0;
+    cursor: pointer; /* 设置光标为手形 */
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停在统计信息项上的样式 */
+.stats-item:hover {
+    background-color: #2980b9; /* 背景色设置为深蓝色 */
+}
+
+.tips p{
+    color: black; /* 确保字体颜色是黑色 */
+    font-size: 15px;
+}

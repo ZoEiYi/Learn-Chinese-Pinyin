@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Playback</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <p id="redo" onclick="playAudio(main_ran)">Play the audio again<br>(Please click this text for the first time entry)</p>
+        <input type="button" id="btn1" class="audio-btn" onclick="checkAndPlay(this)">
+        <input type="button" id="btn2" class="audio-btn" onclick="checkAndPlay(this)">
+        <input type="button" id="btn3" class="audio-btn" onclick="checkAndPlay(this)">
+        <input type="button" id="btn4" class="audio-btn" onclick="checkAndPlay(this)">
+    </div>
+
+    <div id="stats">
+        <h3>Statistics</h3>
+        <div id="stats-content"></div>
+    </div>
+    <div id="tips">
+        <p>tips:Click the corresponding pinyin in the statistical information to play the pronunciation</p>
+    </div>
+
+
+    <audio id="audioPlayer"></audio>
+</body>
+</html>
